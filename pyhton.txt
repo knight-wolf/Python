@@ -1,0 +1,70 @@
+Loops :
+
+- repititions 
+- iterations
+
+there are two kinds of loops
+ - finite
+ - infinite
+every loop requires four important components
+  - initialisation
+  - limit / condition
+ - increment / decrement
+ - statements
+
+python has two loops
+ - for (for finite iterations )
+ - while ( both for finite and infinite)
+
+FOR loop:
+ for finite iterations
+- it is used with numbers, strings, collections
+ - whereas while loop is only for numbers
+
+range() 
+ - it is an iterator which can be used only with numbers in a for loop.
+ - it can be used in three ways both for incremented and decremented tools
+
+for ----> numbers--->range()
+
+range(<endpoint>) 0 1 2 3 4.......endpoint-1
+range(10) 0 1 2 3 4 5......9   initialisation=0, limit=9, step=+1
+
+range(<spoint>,<endpoint>) spoint.spoint+1..................endpoint-1
+
+range(<spoint>,<endpoint>,<step>)
+  ---the above all are ictrementing range function.
+range(<endpoint>,<spoint>,<step>) ---->decremented range function. ( in decremented it will stop 1 step ahead of spoint value)
+
+
+syntax of FOR:
+ for <dummy> in range():
+   <statements>
+
+example:
+
+  for i in range(10)
+  print(i)
+
+ for i in range(10)
+  print(i ,end="")    --- it will print all the numbers in a single line
+
+ for i in range(3,15,2)
+  print(i)
+ for i in range(13,7,-1)
+ print(i)
+ for i in range(100,5,-5)
+ print(i)
+
+
+PATTERNS:
+ if user enters:
+ n-->5
+ *
+ **
+ ***
+ ****
+ *****
+
+task--- print characters using ascii values
+

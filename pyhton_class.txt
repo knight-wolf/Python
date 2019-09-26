@@ -1,0 +1,857 @@
+scripting for automation
+- devops cloud
+- set of tools
+- python scripts
+
+scripting is of four kinds
+ -browser level (client side )------>js
+- app level (server side ) ------>php,java, python, ruby, .net
+- os level--->python, ruby
+
+scientific computing
+- anything which involves advance operations / advance algorithms
+- ML/DL/DS/AI.....(set of advance algorithms)
+  
+   R, MATLAB, Sass ----> which can be used in scientific computing
+ MATLAB, Sass --->are paid languages
+ R--->difficult (c++)
+
+Py ---->version --->3.7 -->latest stable version --->py3
+                --->2.7 -->mostly used stable version -->py2
+py2--->update--->py3
+ --->py2 code should work in py3
+ --->py3 code should not work in py2
+ but these both codes wont work........
+
+so...it is not an update....it is an architectural change.......
+
+
+INSTALLATION.....
+   LINUX/mac---->pre installation of py2 --->upgrade
+    windows---->python.org--->download-->run
+ ..there are two checkboxes while installing python..
+     ___set path for python
+     ___install pip
+
+cmd/terminal
+-----------
+c/desktop:>python
+---------
+---------
+---------
+
+we can run two versions of python in a single system...
+
+FEATURES.....
+- open source
+- interpretd
+- dynamically typed
+- easy syntax
+- strictly intended
+- cross platform
+- extensive libs
+
+OPEN SOURCE
+ - free
+INTERPRETED
+- executions
+  compiled vs interpreted
+ c,cpp,java vs python
+
+compiled -->c-->100 lines--->13 19 40 errors
+100--->compile-->errors(13 19 40)-->fix-->compile-->compiled file-->run-->100% output...
+
+interpreted-->python-->100 lines-->13 19 40 errors
+100-->interpret-->output till 12, error at 13-->fix 13-->interpret-->output till 18, error at 19-->fix 19-->interpret-->output till 39, error at 40-->fix 40-->interpret-->100% output..
+
+Dynamically typed
+--- we will not tell what type of data is passing.....
+
+Easy syntax..
+ ---syntax is a grammar of code
+ ---control flow characters--in python we have only :
+
+Strictly indented
+  indentation---->use of spaces--->makes our code more readable......
+ --in python we have to definitely use spaces otherwise it will indicate error( IndentationError)....
+
+Cross platform
+--can run on all os
+
+Extensive libraries
+--py -->web libs -->django
+  py-->GUI libs--.tkinter
+  scripting-->libs-->os , sys
+
+MONDAY - (22/7/19)
+------------------------
+---KEYWORDS - 35 (3.7 version )
+      - these are the predefined words
+      - we cannot modify /delete/ cannot add a new keyword.
+      - immutable
+IDENTIFIERS
+    - These are used for naming the components
+    - user defined
+    - naming rules
+              - start small case
+              - start capital(not recommonded)
+              - cannot start with number and symbol except @ and _ and __
+              - we can use number in middle
+              - we can use only one symbol _ 
+ -- valid IDENTIFIERS
+      - name , Age , email_address , _user , mobile2, __password
+ -- invalid IDENTIFIERS
+      - $name , 3mobile
+
+VARIABLES
+- storage component
+- variables have three important components
+   - name-->identifier 
+   - value--->data
+   - address--->location
+SYNTAX
+   -  <varname>=<varvalue>
+  - to get location -->  id(<varname>)
+  - typr(<varname>) --> gives data type of a variable
+
+
+DATATYPES in python
+ we have 5 datatypes in python
+    numbers----
+    strings-----these two are independent datatypes
+ 
+     lists 
+     tuples
+     dictionaries-----these three are called collections
+special datatypes
+    sets 
+    frozensets
+
+
+NUMBERS
+  - int float long complex ----->py2
+  - int float complex --->py3
+all whole --- int
+all decimal --- float
+a+ib / c+dj ---- complex
+
+--------INT-------|---------long--------------py2
+---------int-------|----------int-------------py3
+| -----> max possible integer
+
+--import sys
+--sys.maxint    py2
+--sys.maxsize  py3
+ - we use numbers to perform operations
+
+OPERATORS in python
+ 6
+ arithmetic
+ comparision
+ logical
+ bitwise
+     --the above are only for numbers
+ membership
+ identity
+     -- these are for other types except numbers
+
+ARITHMETIC
+  7 operators....which gives values as output
+  +
+  -
+  *
+  / division -->gives with decimal
+  // floor division --> gives only int value
+  %  gives you remainder
+  **  exponent
+a=25
+b=6
+py3--
+ a/b 4.1666667
+ a//b 4
+py2
+ a/b 4
+ a//b 4
+
+
+COMPARISION
+ 6 operators which returns true or false
+ ==
+ !=
+ >
+ <
+ <=
+ >=
+
+LOGICAL
+ 3 operators returns -- true/ false/ values 
+  and 
+   or 
+  not
+
+these are based on truth tables
+
+and ---> ttt
+or ---> fff
+
+not(f) ----- t
+not(t) -- f
+
+
+
+TUESDAY ( 23/07/2019 )
+----------------------------
+
+-- all the numbers are true
+10 and 20 
+t and t --->execution stops at 20 so 20 will be output
+20 and 10
+t and t  --->execution stops at 10 so 10 will be output
+
+in the same way...
+10  or 20
+t ----->in or condition one true is enough to prove the entire statement so execution stops at 10...output will be 10.
+
+BITWISE
+we have 6 bitwise operators all of them return values
+   bitwise and -->&
+   bitwise or --> |
+   bitwise not --> ~
+   right shift --> >>
+   left shift -->  <<
+   xor  --> ^
+ t--->1
+ f-->0
+
+  - - - - 128  64  32  16  8  4  2  1
+10  -->   0    0   0   0   1  0  1  0
+20  -->   0    0   0   1   0  1  0  0
+
+examples for logical and , or  operators
+ 10/20 , 20/30 ,23&32
+
+LOGICAL NOT (~)
+-------------------
+~ ---> 2's complement
+~x ---> -(x+1)
+~25 -->  -26
+~(-9) --> 8
+ 
+go through signed and unsigned integers (*)
+
+RIGHT SHIFT (>>) , LEFT SHIFT (<< )
+  -  to bring the values steeply down or steeply up we will use shift operators.
+
+TASK.........> Draw truth table for XOR.....
+  -------------------------------
+   0 ^ 0 ---- 0
+   1 ^ 0 ---- 1
+   0 ^ 1 ---- 1
+   1 ^ 1 ---- 0
+
+STRINGS :
+ - strings are either single characters or a combination of characters enclosed in either single quotes or double quotes.' "
+ - the characters in the course can be alphanumeric
+FEATURES 
+ - strings can be indexed
+ - sliced
+ - concatenated
+ - iterated
+ - immutable
+ <class str>
+
+syntax:
+ <strname> ="<strvalue>"
+ tech = "python"
+
+ p  y  t  h  o  n
+ 0  1  2  3  4  5  --. indices (forward)
+ -6 -5 -4 -3 -2 -1 ---. indices (reverse) ........ index starts from -1 from end of the string...
+
+ - indexing is used to extract a single character from a string
+ 
+example :  ( practise .....indexing..)
+
+Loops :
+- repititions 
+- iterations
+
+there are two kinds of loops
+ - finite
+ - infinite
+every loop requires four important components
+  - initialisation
+  - limit / condition
+ - increment / decrement
+ - statements
+
+python has two loops
+ - for (for finite iterations )
+ - while ( both for finite and infinite)
+
+FOR loop:
+ for finite iterations
+- it is used with numbers, strings, collections
+ - whereas while loop is only for numbers
+
+range() 
+ - it is an iterator which can be used only with numbers in a for loop.
+ - it can be used in three ways both for incremented and decremented tools
+
+for ----> numbers--->range()
+
+range(<endpoint>) 0 1 2 3 4.......endpoint-1
+range(10) 0 1 2 3 4 5......9   initialisation=0, limit=9, step=+1
+
+range(<spoint>,<endpoint>) spoint.spoint+1..................endpoint-1
+
+range(<spoint>,<endpoint>,<step>)
+  ---the above all are ictrementing range function.
+range(<endpoint>,<spoint>,<step>) ---->decremented range function. ( in decremented it will stop 1 step ahead of spoint value)
+
+
+syntax of FOR:
+ for <dummy> in range():
+   <statements>
+
+example:
+
+  for i in range(10)
+  print(i)
+
+ for i in range(10)
+  print(i ,end="")    --- it will print all the numbers in a single line
+
+ for i in range(3,15,2)
+  print(i)
+ for i in range(13,7,-1)
+ print(i)
+ for i in range(100,5,-5)
+ print(i)
+
+
+PATTERNS:
+ if user enters:
+ n-->5
+ *
+ **
+ ***
+ ****
+ *****
+
+task--- print characters using ascii values
+
+
+06 - 08 -2019 -------------
+
+07 - 08 -2019 -------------
+  FOR loop with strings:
+ - syntax:
+
+for <dummy> in <strname>:
+   <statements>
+
+
+08 -08 -2019
+-----------------
+WHILE loop:
+ - it can be used for both for finite and infinite iterations and only for numbers
+  
+syntax:
+<intialisation>
+while <condition>:
+         <statements>
+        <inc/dec>
+ a=1
+while a<10:
+    print(a)
+    a=a+1
+
+a=10
+while a>0:
+    print(a)
+    a=a-1
+------------
+- without mentioning increment / decrement we can make an infinite while loop....only if the condition is true
+a=1
+while a==1:
+   print(a)
+
+---------
+while True:
+    print("hello") ------- in reality we may use infinite while loops........but after sometime it may become finite loop
+-----------
+---------------------------------------------
+
+CONTROL STATEMENTS:
+------------------
+we have three control statements
+    pass 
+    break
+    continue
+
+PASS 
+ is used for unimplemented blocks where no statements are executed.
+ it can be used with conditional statements , loops ,functions and classes...etc
+- if we give any statements along with pass ....pass will not work.
+- wherever we dont have statements, we have to give pass
+
+BREAK
+ is used to exit the loop at a condition when the condition is true
+
+for i in range(10):
+    if i==5: 
+      break
+    print(i)
+
+
+for i in range(10):
+   print(i)
+   if i==5:
+     break
+
+CONTINUE
+ is used to exit the loop at a condition and returns to execution after the condition....when the condition is true
+
+
+
+
+
+
+
+MODULE 2:
+-------------------------------------------------
+collections are also termed as sequences
+ python has three major collections
+       - lists
+       - tuples       ( lists and tuples are sequences)
+       - dictionaries
+ and two special collections
+        - sets 
+        - frozen sets
+
+Features:
+ these are of 1 x n      1 row  n columns  --- these are also called 1d arrays
+  all the collections in python are stacks
+       stack vs queue
+       stack ------ Last In First Out
+       queue ----- First In First Out
+  - by default the storage architecture of pythons collection is stack if needed to use queues it needs to be imported.
+  - every collection has its own class.
+
+Lists:
+-------------------
+   indexed, sliced, concatenated, iterated
+   these are mutable datatype.
+   <class list>
+   these can store repititions.
+   can store heterogeneous data.
+   lists are sequential or ordered collections.
+ syntax:
+     <listname> = [ <ele1>, <ele2>........]
+
+   <listname>[<index>] -------------------- indexing
+   <listname>[<sindex>:<eindex>]
+
+ iteration -----
+  for <dummy> in <listname>
+
+mutable properties:
+   add 
+   remove
+    modify
+
+ remove -
+    del <listname>[<index>] --- it will directly affect the original list
+   removing elements is a expensive thing
+   cause index values  will change while deleting.
+
+modify -
+    <listname>[<index>] = <newvalue>
+    we can change any datatype from any datatype
+
+adding:
+   we use two functions to add the elements to a list
+      - <listname>.append(<element>)
+     - <listname>.insert(<index>,<element>)
+ -  append will add the element at the end of the list.
+    it will not change the index values of the previous elements.
+
+ - whereas the insert will add the element at the index specified
+   it will change the index values of the next elements.
+
+
+
+LIST FUNCTIONS:
+------------------------------
+ len(), count(), index()...........
+
+del mixed[3]  --------------------- if we have to use this way we have to know the index.
+ - del mixed[mixed.index(19)] -------------- if we dont know the index 
+
+- pop() function removes the last element from the list. --------------- <listname>.pop()
+- remove() to remove the specified element.  ------------------------- <listname>.remove(<element>)
+- sort()   to sort the elements ....default will be ascending order
+- descending order  -------- sort() + reverse()  ----------------- after sort() ----- <listname>.reverse()
+- the other way ---------------------- <listname>.sort(reverse = true)  ---------------> descending order
+- sort() functions can only be used for homogeneous lists.
+- heterogeneous sort only works in python 2 --- it doesnt work in python 3.
+
+<listname>.clear() ------------ clears the elements in a list
+
+------------------ 20 august 2019 -----------------------------
+extend() ------------- is used to add one list to other ----------- which saves some space.-
+- whereas if we concatenate lot of memory will be wasted due to repeated elements.
+
+LIST COMPRHENSIONS:
+----------------------------------------
+-list comprehensions are used to make lists using intialisation, iteration, condition, operation and assignment in single line
+- these are only possible on mutable datatypes.
+SYNTAX:
+
+<listname> = [ <assignment> <iteration>]
+
+<listname> =[ <assignment> <iteration> <condition>]
+
+<listname> = [<operation + assignment> <iteration>]
+
+<listname> = [<operation + assignment> <iteration> <condition>]
+
+
+TUPLES:
+- these have the same properties of lists
+- these are immutable
+- these are called default collections
+- <class tuple>
+syntax:
+<tuplename>=(<ele1>, ............)
+
+- we can't assign a new value or delete a value from the tuple
+- we can only perform concatenation
+- when we assign multiple values to single variable it will be stored as tuple ----------------ex: a=10,20 ---> a=(10,20)
+- mutiple assignment is only possible when no. of variables is equal to no. of values.
+- we have only three functions------------ len(), index(),count() -----since these function do not modify values in a tuple.
+- we csn convert a list to tuple and tuple to list
+ list-------->tuple-----tuple()
+ tuple------->list------list()
+
+ex: fees=(10,20,40,25,35)
+    print(fees)
+    print(type(fees))
+    fees=list(fees)
+    print(fees)
+    print(type(fees))
+    fees[2]=45
+    print(fees)
+    print(type(fees))
+    fees=tuple(fees)
+    print(fees)
+    print(type(fees))
+
+TUPLE comprehensions:
+---------------------
+- comprehensions are only for mutable datatypes.
+
+
+DICTIONARIES:
+ - these are mutable collections
+ - these are arbitrary/ unordered
+ - 1 x n
+ - class dict
+ - there is no slicing.
+ - in dictionaries we can modify the indices----->when we modify they will become keys ( termed as keys ).
+ - dictionaries are used to overcome the pre defined indices of both lists and tuples.
+ - dictionaries are collection of key value pairs / collection of items.
+ - because keys and values co-exists.
+ - key + item -----> item.
+
+Syntax:
+ - <dictname> = {<k1>:<v1> , <k2>:<v2> , .......}------> keys k1 k2.....values v1 v2...
+Properties of keys:
+ - should be unique.
+ - immutable -------> int , str , tuple ( no lists becoz lists are mutable )
+whereas coming to values -----> these can be anything and can be repititve.
+ - if we have two repeated keys it will consider the last key and last value, because collections are of stack.
+
+Indexing:
+- <dictname>[<key>]
+- it can be done only by using keys...it is not possible with values.
+- iterating in adictionary using FOR returns only keys
+Iterable functions:
+- list(<dictname>.keys()) -------------- list of keys
+- list(<dictname>.values()) ------------- list of values
+- list(<dictname>.items()) ---------- return a list of tuple of pairs. (key,value)
+   [ this will work in version 2 and in version 3 it will be somewhat different....so we will convert it into list]
+
+- to modify any item:
+    <dictname>[<key>] = <newvalue>   ( this is the syntax for modifying the values in the dictionary )
+  - if a key is missing and we are trying to modify the value or trying to modify the key which is not in the dictionary, then it  will add the key and value to the dictionary.
+- if we want to delete:
+     del <dictname>[<key>]  --- it will delete both the key and the value.
+
+FUNCTIONS in dictionary:
+- <dictname>.pop(<key>) , len() , <dictname>.popitem() -----> this will remove any arbitrary element
+- <dictname>.clear() ---->clears the items in the dictionary.
+-  we cannot concatenate using + operator
+      we can use ----------- <dict1>.update(<dict2>) --- it adds elements of second dictionary to the first dictionary and it can be only used once for two dictionaries.
+      we can update two dictionaries only once.
+zip() :
+- zip function takes multiple dictionaries as inputs and converts them into zip objects.
+- the zip object needs to be type casted to any of the collections
+- when we use zip it will ignore extra elements.
+- if we give three lists they will be converted into lists and tuples but not as dictionaries( only if the length of three lists is different)
+ ex:
+     l1=[10,20,30,40,50]
+     l2=[10,200,30,70,500]
+     l3=[10,200,30,70,60,70]
+     zo=zip(l1,l2,l3)
+     print(zo)
+      --------------  we will get an error if we change it to dictionary, since the length of lists is not the same.
+
+Dictionary comprehensions:
+- only if key and value are related
+d={<assignment> <iteration>}
+d={<assignment> <iteration> <condition>}
+
+- we cannot make a double iteration in dictionary comprehensions.
+
+
+ SETS & FROZENSETS: (topics : Functions and Files)
+
+----------  
+ MODULES & PACKAGES:
+ ------------------
+ module ---> any file which execute a python code are called modules.
+ - there are 3 kinds of modules
+        . internal default
+        . internal imported
+        . external
+- internal default:
+     -  internal default modules are present in the libraries and all the components from these modules are available on all    python files.
+     - these do not required any importing.
+- internal imported:
+     -  internal imported modules are present in the libraries but need to be imported to use the components from them.
+     - reduce(),sys.argv,keyword.kwlist,sys.maxint
+- external:
+     - these modules are not present in the libraries.they need to be downloaded installed and then imported.
+     - numpy, pandas, cv2, pil, six
+
+- external modules are used with package manager.
+- pythons package manager is python packaging index (PyPI)
+- abbrevated as pip.
+- pip needs to be installed to download external modules
+     pip list - shows all external modules/ packages
+     pip freeze - shows manually installed modules
+     pip install<modulename>
+     pip uninstall<modulename>
+
+Importing MODULES & PACKAGES: 
+- it can be done in three ways
+   - complete import:
+       - gets all the components from the module imported.
+       - we need to reference it with the module name to use in the python file.
+       - import<modulename>
+
+   - specific import:
+       - it imports only the required components from the module. the components need not to be referenced.
+       - from <modulename> import <components>
+   - * import:
+       - it imports all the components from the module into the python file, the components need not to be referenced.
+       - from <modulename> import *
+
+PACKAGE:
+- collection of modules ---- in folders
+- folder is coverted into package by adding __init__.py file ( __init__.py is an empty file)
+
+Look about importing packages:-----------------TASK FOR TODAY
+   - refer notes
+
+
+------ 23 - 09 - 2019 --------------
+
+random module:
+- it is an internal imported module.
+- it is used for psuedo random number generation.
+- it can only be used with numbers and collections.
+
+
+import random
+print(random.random())
+   the first random is the module name and second random is the function.
+   - random function returns float value between 0 and 1.
+
+   print(random.randint(10,20))
+    - generates a random integer between start and end point including ending points.
+   print(random.randrange(10,20))
+    - same as randint.
+   both differ in the numbers distribution.
+
+l1 = [i for i in range(1,11)]
+print(l1)
+
+(random.shuffle(l1)) ------------------ reorganises the sequence of collection
+print(l1)
+
+print(random.choice(l1))  ----- it will select one random number from the list
+print(random.sample(l1,k=4)) ------ takes two inputs: collection and population ( population is given by k)
+
+
+*****************************************
+
+TASK: look about seed ------- it will stop randomising multiple times
+
+******************************************
+
+OS module:
+- it is an internal imported module used for 
+     - working with directories(empty)
+     - system path manipulations
+
+import os
+print(os.name)  -------------- it gives family name of operating system
+
+print(os.getcwd()) ---- returns current working directory.
+os.chdir() -------- used to change the current dir
+print(os.listdir())  ---------- returns list of directories and files present in the path.
+
+
+Making of directories:
+
+we have two functions to create empty directories 
+        - os.mkdir(<dirname>)    --- creates an empty directory in getcwd location.
+        - os.makedirs()    ---- creates a sequence of empty directories as a tree.
+
+Removing directories:
+
+os.rmdir(<dirname>) ------ it will remove the directory only if it is empty.
+shutil  ------->   this module is used for non empty directories
+os.removedirs() ------ it will remove multiple directories only if directories are empty  ----- only works in py3
+
+
+sys paths:
+
+ we use os.path.
+print(os.path.split("path")) ------- it will split the path into absolute path and endpoint ( such as directory,file)
+    - it will not check the existence of the directories or files ..... it will just split.
+print(os.path.splitext("path")) ----- it will give the extension of the file.
+   (NOTE: directories do not have the extensions)
+
+
+print(os.path.isdir(path))   --- checks whether it is directory or not ,  only if it is true we will send it to split
+print(os.path.isfile(path))  --- checks whether it is a file or not
+
+TASK:  rename , move ------ look about these
+
+TASK: enter path:
+      user enters path ------ moving files into their respective folders
+
+
+MODULE 4:
+
+
+CLASSES & OBJECTS ------
+
+Both classes and objects are explicitly not mandatory in python. They need not to be defined compulsory instead everything is an object in python.
+ - hence python is considered as pure OOPS language.
+
+
+ CLASS:
+  - A class is a collection of variables and functions. It is a blueprint of object and it stores all the properties of an object as its attributes.
+ 
+ OBJECT: 
+  - An object is an instance of class that stores the data of the attributes in a class. It has memory address and it existsin real.
+
+- A single class can have multiple objects whereas a single object cannot be an instance of multiple classes at the same time.
+
+ex:
+
+b ="mysql"
+typeof(b)
+<class "str">
+a="python"
+typeof(a)
+<class "str">
+
+
+Syntax of class:
+  class <cname>:
+   <attributes>
+
+   A class essentially has three components declaration, implementation and object creation
+  - first two are mandatory and can only be done once.
+  - the last one is optional
+
+
+Syntax of object:
+ 
+ <oname> = <cname>()
+
+
+ <oname1> = <cname>()
+ <oname2> = <cname>()
+ <oname3> = <cname>()
+ <oname4> = <cname>()
+
+
+The variables defined in a class are termed as class variables.
+The functions defined in a class are methods ( 3 kinds)
+
+In classes and objects there are two kinds of references:
+    - class reference        cname.
+    - object reference       oname.
+
+In python the main() is called automatically based on the module.
+
+ex:
+class organistion():
+    org_name="lync"
+o1=organisation()
+
+
+print(type(organisation))   ---- it will give < class 'type'> in py2
+print(type(o1))        ----- it will give < class 'instance'> in py3    in py2 it will give < class 'organisation'>      
+
+- class variables can be accessed both by object and class reference. 
+- when a change occurs using class reference it affecyts both the class and all the objects, object reference affects only the object.
+- if a class variable is modified using class reference after it has been altered by object reference the variable doesn't get changed in that instance.( change made by object reference is final!!!!)
+- All the local variables of the methods in the class are instance variables and can be accessed only by using instance of the class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

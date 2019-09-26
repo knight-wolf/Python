@@ -1,0 +1,78 @@
+MODULE 3 - Assesment
+
+1. what will be the outputof the following:
+       print(max(min(True,-1,2),-1,False))
+  - False
+2. what will be the output of the following:
+       print(any([3<2,4>2,3<4]))
+  - True
+3. if a=3 what will be the outcome of eval('a^2')
+  - 1
+4. which of the following will not take iterables:
+  - 
+5. command to get name of file using file object
+  - 
+6. Files command to read all the characters from a file
+  - 
+7. What will be the output:
+      import sys
+      print(sys.stdout.write('programming'))
+  - programming11
+8. os function to get present working directory
+  - getcwd()
+9. What is the range of values rando.random() returns
+  - [0.0,0.1)
+10. What is the type of data does random.shuffle() accepts
+  - list
+11. Outcome of below function
+        random.randrange(1,23,4)
+  - 21
+13.result of 
+        print(math.trunc(3.1))
+  - 3
+14. what is the output of the following:
+        x=[12,34]
+        print(len(list(map(int,x))))
+  - 2
+15. False statement about recursion:
+  - Every recursive funvtion must have a return value
+16. The type of each element in sys.argv is 
+  - list
+17. for function definition we use:
+  - def
+18. Keyword used for declaring anonymous functions
+  - lambda
+19. Can we declare loopa and conditionals in anonymous functions:
+  - Yes
+20. Method used to pass mutiple positional arguments
+  - 
+
+
+SUBJECTIVE:
+
+1.Anonymous function:
+     - it is a function without a name.
+     - we use lambda keyword for declaring anonymous functions.
+
+2. difference between *args and *kwargs
+    - *args:
+       - the syntax is to use the symbol * to take in a variable number of arguments.
+       -  allows you to do is take in more arguments than the number of formal arguments that you previously defined. With *args, any number of extra arguments can be tacked on to your current formal parameters (including zero extra arguments).
+    - **kwargs:
+       - The special syntax **kwargs in function definitions in python is used to pass a keyworded, variable-length argument list.
+       - We use the name kwargs with the double star. The reason is because the double star allows us to pass through keyword arguments (and any number of them).
+3. Recursion and eample?
+    - Recursion is a method of programming or coding a problem, in which a function calls itself one or more times in its body. 
+    - If a function definition satisfies the condition of recursion, we call this function a recursive function.
+    example:
+          def factorial(n):
+                   if n == 1:
+                       return 1
+                   else:
+                       return n*factorial(n-1)
+4. What are local and global variables
+    - Local variables:
+      the variables that are declared inside a function and can be used only within that function are called local variables.
+    - Global variables:
+      the variables that are declared outside the function and can be used anywhere in the code and can be modified anywhere are known as global variables.
+5.
