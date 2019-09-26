@@ -75,4 +75,17 @@ SUBJECTIVE:
       the variables that are declared inside a function and can be used only within that function are called local variables.
     - Global variables:
       the variables that are declared outside the function and can be used anywhere in the code and can be modified anywhere are known as global variables.
-5.
+5. What are the different ways to import a module?
+   -  it can be done in three ways
+   - complete import:
+       - gets all the components from the module imported.
+       - we need to reference it with the module name to use in the python file.
+       - import<modulename>
+
+   - specific import:
+       - it imports only the required components from the module. the components need not to be referenced.
+       - from <modulename> import <components>
+   - * import:
+       - it imports all the components from the module into the python file, the components need not to be referenced.
+       - from <modulename> import *
+
